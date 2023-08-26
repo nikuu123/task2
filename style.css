@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background: #072E33;
+    color: white; 
+	  font-family: sans-serif;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:1rem 2rem;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 100;
+  }
+  
+  .header .logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:  white;
+    letter-spacing: .2rem;
+    text-decoration: none;
+  }
+
+   .header .logo:hover{
+    color: white;
+   }
+  
+   .header .logo i{
+    padding:0 .5rem;
+  }
+  
+  
+  .header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .header .navbar ul li{
+    margin:0 1.5rem;
+  }
+  
+  .header .navbar ul li a{
+    font-size: 1rem;
+    font-weight: bold;
+   color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  
+  
+.login-box {
+	width: 360px;
+  height: 320px;
+	position: absolute;
+	top: 50%;
+	left: 50%;    
+  padding: 1rem;
+	transform: translate(-50%, -50%);
+}
+
+.login-box h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.user-box {
+	position: relative;
+}
+
+.user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+  color: white;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #444;
+	outline: none;
+	background: transparent;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+  color: white;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+  color: white;
+	font-size: 12px;
+}
+
+input[type="button"] {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #0F9690;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+input[type="button"]:hover {
+	background: #14599ea3;
+}
+
+.error-message {
+	color: red;
+	margin-bottom: 20px;
+}
